@@ -66,7 +66,24 @@ ui <- page_sidebar(
     textInput("search", "Search topics:", placeholder = "e.g., 'outdoors'"),
     hr(),
     p("Click any course rectangle to see full details."),
-    p("Enter a search term to highlight matching courses.")
+    p("Enter a search term to highlight matching courses."),
+    br(),
+    hr(),
+    p(
+      style = "color: #2f4f4f;",
+      "Made by", 
+      a(href="https://nathan-jeffery.netlify.app/", target="_blank", "Nathan Jeffery"), 
+      "in his work at",
+      a(href="https://citl.illinois.edu/data-analytics-0", target = "_blank", 
+        "CITL Data Analytics"),
+      "at the",
+      a(href="https://illinois.edu", target="_blank", "University of Illinois"),
+      "using",
+      a(href="https://gallery.shinyapps.io/assistant/#", target="_blank", "Shiny Assistant", .noWS = "after"),
+      ". The code is available on",
+      a(href="https://github.com/nathanj3/course-details-demo", target="_blank", "GitHub", .noWS = "after"),
+      "."
+    )
   ),
   card(
     card_header("Course Schedule (2021-2024)"),
